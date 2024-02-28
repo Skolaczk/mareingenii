@@ -19,6 +19,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
       <body className={cn('min-h-screen', fonts)}>
         <Header />
         {children}
+        <div id="navigation" />
       </body>
     </html>
   );
