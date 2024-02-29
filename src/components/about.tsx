@@ -1,0 +1,78 @@
+import { InclinedLine } from '@/assets/shapes/inclined-line';
+import { Semicircle } from '@/assets/shapes/semicircle';
+import { SectionHeading } from '@/components/section-heading';
+
+const data = [
+  {
+    title: 'crystal-clear commitment',
+    content: 'We believe in open and honest communication.',
+  },
+  {
+    title: 'pinnacle of perfection',
+    content: 'We uphold the highest standards in everything we do.',
+  },
+  {
+    title: 'ever-learning',
+    content: "We're committed to growth and improvement.",
+  },
+  {
+    title: 'ngo pledge',
+    content: 'Giving back is integral to our ethos.',
+  },
+];
+
+export const About = () => {
+  return (
+    <section className="container relative space-y-10">
+      <Semicircle className="absolute left-1/2 top-1/2 size-64 -translate-x-1/2 -translate-y-1/2" />
+      <SectionHeading>about</SectionHeading>
+      <div className="space-y-5">
+        <div className="space-y-5">
+          <h3 className="xs:text-5xl font-serif text-4xl uppercase md:text-7xl lg:text-9xl">
+            mission
+          </h3>
+          <p>
+            Our core mission is to maintain the utmost standards of quality and
+            transparency in our services. We are dedicated to perpetual growth
+            and refinement, with the aim of consistently surpassing industry
+            standards.{' '}
+          </p>
+        </div>
+        <span className="bg-primary block h-0.5 w-72" />
+        <p>
+          Additionally, our steadfast commitment to collaborating with NGOs
+          underscores our unfaltering dedication to effective positive change in
+          both society and the global community.
+        </p>
+      </div>
+      <div className="space-y-5">
+        <h3 className="xs:text-5xl after:bg-primary relative font-serif text-4xl uppercase after:absolute after:bottom-1.5 after:ml-4 after:size-4 after:rounded-full md:text-7xl lg:text-9xl">
+          vision
+        </h3>
+        <p>
+          Our vision encompasses setting and reshaping industry standards while
+          fostering innovation and collaboration with like-minded organizations.
+          We are firmly dedicated to the pursuit of excellence, aspiring to be a
+          driving force behind positive change and continuous innovation in the
+          dynamic world of design and product strategy.
+        </p>
+      </div>
+      <div className="flex flex-col space-y-5">
+        <div className="flex items-center">
+          <h3 className="xs:text-5xl font-serif text-4xl uppercase md:text-7xl lg:text-9xl">
+            values
+          </h3>
+          <InclinedLine className="xs:size-10 ml-4 size-8 md:size-14 lg:ml-14 lg:mr-0 lg:size-20" />
+        </div>
+        <div className="space-y-8">
+          {data.map(({ title, content }) => (
+            <div key={title} className="space-y-2.5">
+              <h4 className="text-3xl font-extralight uppercase">{title}</h4>
+              <p>{content}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
