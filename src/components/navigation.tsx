@@ -6,12 +6,11 @@ import { XIcon } from '@/assets/icons/x-icon';
 import { LogoSmall } from '@/assets/logo-small';
 import { useMounted } from '@/hooks/use-mounted';
 import { useOnClickEsc } from '@/hooks/use-on-click-esc';
+import { navigationItems } from '@/lib/data';
 
 type TNavigationMenuProps = {
   close: () => void;
 };
-
-const navigationItems = ['services', 'about', 'contact'];
 
 export const Navigation = ({ close }: TNavigationMenuProps) => {
   const ref = useRef<Element | null>(null);
@@ -43,15 +42,15 @@ export const Navigation = ({ close }: TNavigationMenuProps) => {
             </button>
           </header>
           <div className="container mt-10 flex h-[calc(100vh-64px)] flex-col space-y-10 lg:mt-0 lg:justify-center lg:space-y-14">
-            {navigationItems.map((navItem, i) => (
+            {navigationItems.map(({ name, href }, i) => (
               <Link
-                key={navItem}
-                href="/#"
+                key={name}
+                href={href}
                 className="flex justify-between text-4xl lg:text-9xl"
                 onClick={close}
               >
                 <span className="font-thin">0{i + 1}</span>
-                <p className="font-serif uppercase">{navItem}</p>
+                <p className="font-serif uppercase">{name}</p>
               </Link>
             ))}
           </div>
