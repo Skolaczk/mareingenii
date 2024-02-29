@@ -1,9 +1,9 @@
-import { SectionHeading } from '@/components/section-heading';
+import { Hero } from '@/components/hero';
 
 const Home = () => {
   return (
     <main>
-      <SectionHeading>about</SectionHeading>
+      <Hero />
     </main>
   );
 };
