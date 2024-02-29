@@ -2,25 +2,7 @@ import { Corner } from '@/assets/shapes/corner';
 import { InclinedLine } from '@/assets/shapes/inclined-line';
 import { Semicircle } from '@/assets/shapes/semicircle';
 import { SectionHeading } from '@/components/section-heading';
-
-const data = [
-  {
-    title: 'crystal-clear commitment',
-    content: 'We believe in open and honest communication.',
-  },
-  {
-    title: 'pinnacle of perfection',
-    content: 'We uphold the highest standards in everything we do.',
-  },
-  {
-    title: 'ever-learning',
-    content: "We're committed to growth and improvement.",
-  },
-  {
-    title: 'ngo pledge',
-    content: 'Giving back is integral to our ethos.',
-  },
-];
+import { valuesData } from '@/lib/data';
 
 export const About = () => {
   return (
@@ -67,7 +49,7 @@ export const About = () => {
           <InclinedLine className="xs:size-10 ml-4 size-8 md:size-14 lg:ml-14 lg:mr-0 lg:size-20" />
         </div>
         <div className="space-y-8 md:order-1 md:space-y-14">
-          {data.map(({ title, content }) => (
+          {valuesData.map(({ title, content }) => (
             <div key={title} className="space-y-2.5 md:space-y-5">
               <h4 className="max-w-md text-3xl font-extralight uppercase md:text-4xl lg:text-5xl">
                 {title}
