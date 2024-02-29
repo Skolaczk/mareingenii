@@ -25,6 +25,12 @@ const config = {
         primary: '#101722',
         secondary: '#EDE9E2',
       },
+      screens: {
+        xs: '450px',
+      },
+      fontSize: {
+        '9xl': ['110px', '1'],
+      },
     },
   },
 } satisfies Config;
