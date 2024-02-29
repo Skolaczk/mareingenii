@@ -51,7 +51,7 @@ export const About = () => {
         <div className="space-y-8 md:order-1 md:space-y-14">
           {valuesData.map(({ title, content }) => (
             <div key={title} className="space-y-2.5 md:space-y-5">
-              <h4 className="max-w-md text-3xl font-extralight uppercase md:text-4xl lg:text-5xl">
+              <h4 className="max-w-xs text-2xl font-extralight uppercase md:max-w-md md:text-4xl lg:text-5xl">
                 {title}
               </h4>
               <p>{content}</p>
