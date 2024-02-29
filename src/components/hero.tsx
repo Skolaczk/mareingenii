@@ -27,7 +27,7 @@ export const Hero = () => {
           into tangible, market-ready solutions. Explore our portfolio and see
           how we bring visions to life through the art of product design.{' '}
         </p>
-        <span className="xs:text-6xl mx-4 inline text-5xl font-thin md:text-7xl lg:text-9xl">
+        <span className="xs:text-6xl mr-4 inline text-5xl font-thin md:ml-4 md:text-7xl lg:text-9xl">
           &
         </span>
         <h3 className="xs:text-5xl inline font-serif text-4xl uppercase md:text-6xl lg:text-8xl">
