@@ -1,7 +1,5 @@
-import { Corner } from '@/assets/shapes/corner';
-import { InclinedLine } from '@/assets/shapes/inclined-line';
-import { Semicircle } from '@/assets/shapes/semicircle';
-import { SectionHeading } from '@/components/section-heading';
+import { Corner, InclinedLine, Semicircle } from '@/assets/shapes';
+import { SectionHeading } from '@/components';
 import { valuesData } from '@/lib/data';
 
 export const About = () => {

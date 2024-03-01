@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { LogoLarge } from '@/assets/logo-large';
+import { MageingeniiLarge } from '@/assets/logos';
 import { navigationItems } from '@/lib/data';
 
 export const Footer = () => {
@@ -8,7 +8,7 @@ export const Footer = () => {
     <footer className="border-primary border-t">
       <div className="xs:flex xs:space-y-0 xs:justify-between container space-y-8 py-10">
         <div className="xs:order-2">
-          <LogoLarge className="mb-5 h-10 w-32" />
+          <MageingeniiLarge className="mb-5 h-10 w-32" />
           <p className="mb-1">mare ingenii - all rights reserved</p>
           <p>{new Date().getFullYear()} ©</p>
         </div>

@@ -1,5 +1,4 @@
-import { Circle } from '@/assets/shapes/circle';
-import { InclinedLine } from '@/assets/shapes/inclined-line';
+import { Circle, InclinedLine } from '@/assets/shapes';
 
 export const Hero = () => {
   return (
