@@ -3,6 +3,7 @@ import '@/styles/globals.css';
 import { PropsWithChildren } from 'react';
 import type { Metadata } from 'next';
 
+import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { siteConfig } from '@/lib/constant';
 import { fonts } from '@/lib/fonts';
@@ -19,6 +20,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
       <body className={cn('min-h-screen', fonts)}>
         <Header />
         {children}
+        <Footer />
         <div id="navigation" />
       </body>
     </html>
