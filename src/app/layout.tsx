@@ -3,8 +3,7 @@ import '@/styles/globals.css';
 import { PropsWithChildren } from 'react';
 import type { Metadata } from 'next';
 
-import { Footer } from '@/components/footer';
-import { Header } from '@/components/header';
+import { Footer, Header } from '@/components';
 import { siteConfig } from '@/lib/constant';
 import { fonts } from '@/lib/fonts';
 import { cn } from '@/lib/utils';

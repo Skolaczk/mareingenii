@@ -2,9 +2,9 @@
 
 import Link from 'next/link';
 
-import { LogoLarge } from '@/assets/logo-large';
-import { Navigation } from '@/components/navigation';
-import { useOpenClose } from '@/hooks/use-open-close';
+import { MageingeniiLarge } from '@/assets/logos';
+import { Navigation } from '@/components';
+import { useOpenClose } from '@/hooks';
 
 export const Header = () => {
   const { isOpen, open, close } = useOpenClose();
@@ -12,7 +12,7 @@ export const Header = () => {
   return (
     <header className="relative flex items-center justify-center border-b border-b-black py-5">
       <Link href="/">
-        <LogoLarge />
+        <MageingeniiLarge />
       </Link>
       <button
         type="button"

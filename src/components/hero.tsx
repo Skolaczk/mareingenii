@@ -1,9 +1,8 @@
-import { Circle } from '@/assets/shapes/circle';
-import { InclinedLine } from '@/assets/shapes/inclined-line';
+import { Circle, InclinedLine } from '@/assets/shapes';
 
 export const Hero = () => {
   return (
-    <section className="container relative my-14 space-y-10 md:my-20 md:space-y-20 lg:my-40 lg:space-y-24">
+    <section className="container relative my-16 space-y-10 md:my-20 md:space-y-20 lg:my-40 lg:space-y-24">
       <Circle className="xs:size-80 xs:translate-y-[-60%] absolute top-1/2 size-64 -translate-y-2/3 md:translate-y-[-55%] lg:size-auto lg:-translate-y-1/2" />
       <div className="space-y-10 md:flex md:items-center md:justify-between md:space-y-0 lg:justify-start lg:gap-20">
         <div className="flex items-center">

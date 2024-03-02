@@ -1,11 +1,12 @@
+'use client';
+
 import { useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import Link from 'next/link';
 
-import { XIcon } from '@/assets/icons/x-icon';
-import { LogoSmall } from '@/assets/logo-small';
-import { useMounted } from '@/hooks/use-mounted';
-import { useOnClickEsc } from '@/hooks/use-on-click-esc';
+import { XIcon } from '@/assets/icons';
+import { MageingeniiSmall } from '@/assets/logos';
+import { useMounted, useOnClickEsc } from '@/hooks';
 import { navigationItems } from '@/lib/data';
 
 type TNavigationMenuProps = {
@@ -30,7 +31,7 @@ export const Navigation = ({ close }: TNavigationMenuProps) => {
         <div className="bg-primary text-secondary absolute left-0 top-0 h-screen w-full">
           <header className="relative flex justify-center py-5">
             <Link href="/" onClick={close}>
-              <LogoSmall />
+              <MageingeniiSmall />
             </Link>
             <button
               type="button"

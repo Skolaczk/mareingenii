@@ -1,6 +1,6 @@
 import { HTMLProps } from 'react';
 
-export const LogoSmall = ({ className }: HTMLProps<SVGElement>) => {
+export const MageingeniiSmall = ({ className }: HTMLProps<SVGElement>) => {
   return (
     <svg
       width="30"
