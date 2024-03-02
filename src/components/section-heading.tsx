@@ -9,7 +9,7 @@ export const SectionHeading = ({
   return (
     <h2
       className={cn(
-        'after:bg-primary container relative p-0 text-lg after:absolute after:bottom-[0.45rem] after:ml-2 after:h-px after:w-28',
+        'after:bg-primary container relative mb-10 p-0 text-lg after:absolute after:bottom-[0.45rem] after:ml-2 after:h-px after:w-28 lg:mb-20',
         className
       )}
     >
