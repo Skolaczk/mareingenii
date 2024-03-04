@@ -1,4 +1,4 @@
-import { About, Clients, Hero } from '@/components';
+import { About, Clients, Contact, Hero } from '@/components';
 
 const Home = () => {
   return (
@@ -6,6 +6,7 @@ const Home = () => {
       <Hero />
       <About />
       <Clients />
+      <Contact />
     </main>
   );
 };

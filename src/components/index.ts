@@ -5,3 +5,5 @@ export * from './navigation';
 export * from './about';
 export * from './section-heading';
 export * from './clients';
+export * from './contact';
+export * from './modal-template';

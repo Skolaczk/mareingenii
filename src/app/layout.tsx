@@ -20,7 +20,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
         <Header />
         {children}
         <Footer />
-        <div id="navigation" />
+        <div id="modal-template" />
       </body>
     </html>
   );
