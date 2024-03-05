@@ -1,6 +1,6 @@
 import { HTMLProps } from 'react';
 
-export const XIcon = ({ className }: HTMLProps<SVGElement>) => {
+export const X = ({ className }: HTMLProps<SVGElement>) => {
   return (
     <svg
       width="40"
