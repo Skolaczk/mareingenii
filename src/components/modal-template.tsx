@@ -4,7 +4,7 @@ import { ReactNode, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import Link from 'next/link';
 
-import { XIcon } from '@/assets/icons';
+import { X } from '@/assets/icons';
 import { MageingeniiSmall } from '@/assets/logos';
 import { useMounted, useOnClickEsc } from '@/hooks';
 
@@ -39,7 +39,7 @@ export const ModalTemplate = ({ children, close }: TModalTemplate) => {
               onClick={close}
             >
               close
-              <XIcon className="relative -bottom-px size-4 rotate-45" />
+              <X className="relative -bottom-px size-4 rotate-45" />
             </button>
           </header>
           {children}

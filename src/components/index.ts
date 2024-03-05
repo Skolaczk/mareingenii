@@ -7,3 +7,4 @@ export * from './section-heading';
 export * from './clients';
 export * from './contact';
 export * from './modal-template';
+export * from './contact-form';

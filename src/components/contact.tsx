@@ -1,6 +1,6 @@
 'use client';
 
-import { ModalTemplate } from '@/components/modal-template';
+import { ContactForm } from '@/components/contact-form';
 import { useOpenClose } from '@/hooks';
 
 export const Contact = () => {
@@ -14,7 +14,7 @@ export const Contact = () => {
           get in touch
         </h2>
       </section>
-      {isOpen && <ModalTemplate close={close}>test</ModalTemplate>}
+      {isOpen && <ContactForm close={close} />}
       <button
         type="button"
         onClick={open}
