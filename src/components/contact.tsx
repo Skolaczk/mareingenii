@@ -10,7 +10,10 @@ export const Contact = () => {
     <>
       <section className="container my-32 space-y-3 text-center lg:my-64">
         <p>Interested in working with us?</p>
-        <h3 className="xs:text-5xl font-serif text-4xl uppercase md:text-6xl lg:text-7xl">
+        <h3
+          onClick={open}
+          className="xs:text-5xl cursor-pointer font-serif text-4xl uppercase md:text-6xl lg:text-7xl"
+        >
           get in touch
         </h3>
       </section>

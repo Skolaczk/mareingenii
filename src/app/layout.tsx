@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en">
-      <body className={cn('min-h-screen', fonts)}>
+      <body className={cn(fonts)}>
         <Header />
         {children}
         <Footer />

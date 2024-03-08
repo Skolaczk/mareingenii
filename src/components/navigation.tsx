@@ -15,7 +15,7 @@ export const Navigation = ({ close }: TNavigationMenuProps) => {
           <Link
             key={name}
             href={href}
-            className="flex justify-between text-4xl lg:text-9xl"
+            className="xs:text-5xl flex justify-between text-4xl md:text-7xl lg:text-9xl"
             onClick={close}
           >
             <span className="font-thin">0{i + 1}</span>
