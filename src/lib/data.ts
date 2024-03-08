@@ -1,5 +1,5 @@
 export const navigationItems = [
-  { name: 'home', href: '/' },
+  { name: 'home', href: '/#home' },
   { name: 'about', href: '/#about' },
   { name: 'services', href: '/#services' },
 ];
@@ -23,7 +23,7 @@ export const valuesData = [
   },
 ];
 
-export const serviceslist = [
+export const servicesList = [
   {
     title: 'strategy',
     services: [

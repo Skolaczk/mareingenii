@@ -4,7 +4,10 @@ import { valuesData } from '@/lib/data';
 
 export const About = () => {
   return (
-    <section className="container relative my-16 md:mb-32">
+    <section
+      id="about"
+      className="container relative my-16 scroll-mt-28 md:mb-32"
+    >
       <Semicircle className="absolute left-1/2 top-1/2 size-80 -translate-x-1/2 -translate-y-2/3 md:size-[600px] md:translate-y-[-60%]" />
       <Corner className="absolute bottom-0 right-6 hidden md:block" />
       <SectionHeading>about</SectionHeading>
