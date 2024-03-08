@@ -1,7 +1,5 @@
 'use client';
 
-import Link from 'next/link';
-
 import { MageingeniiLarge } from '@/assets/logos';
 import { Navigation } from '@/components';
 import { useOpenClose } from '@/hooks';
@@ -10,10 +8,12 @@ export const Header = () => {
   const { isOpen, open, close } = useOpenClose();
 
   return (
-    <header className="relative flex items-center justify-center border-b border-b-black py-5">
-      <Link href="/">
-        <MageingeniiLarge />
-      </Link>
+    <header
+      id="home"
+      className="relative flex items-center justify-center border-b border-b-black py-5"
+    >
+      <MageingeniiLarge />
+      <h1 className="sr-only">mare ingenii</h1>
       <button
         type="button"
         aria-label="open navigation"
